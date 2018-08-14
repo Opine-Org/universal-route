@@ -4,7 +4,6 @@ export const getScrollPosition = () => ({
 });
 
 export const setScrollToSessionStorage = () => {
-  const path = window.location.pathname;
   const data = JSON.stringify(
     Object.assign({}, getScrollFromSessionStorage("*") || {}, {
       path: getScrollPosition()

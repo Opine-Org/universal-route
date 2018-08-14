@@ -2,11 +2,7 @@ import appHistory from "./history";
 import nprogress from "nprogress";
 import axios from "axios";
 import uuidv4 from "uuid/v4";
-import {
-  getScrollPosition,
-  getScrollFromSessionStorage,
-  setScrollToSessionStorage
-} from "./scroll";
+import { getScrollFromSessionStorage } from "./scroll";
 
 // initilize a place-holder for the last request cancellation token
 var requestCancellation = false;
